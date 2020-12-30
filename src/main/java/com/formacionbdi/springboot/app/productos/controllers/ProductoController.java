@@ -36,12 +36,12 @@ public class ProductoController {
 		/*boolean ok = false;
 		if(ok == false)
 			throw new Exception("No se pudo cargar el producto");*/
-		try {
+		/*try {
 			Thread.sleep(2000L);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 		return producto;
 	}
 }
