@@ -21,8 +21,8 @@ import com.formacionbdi.springboot.app.productos.models.service.IProductoService
 public class ProductoController {
 	@Autowired
 	private Environment env;
-	@Value("${server.port}")
-	private  Integer port;
+	//@Value("${server.port}")
+	//private  Integer port;
 	@Autowired
 	private IProductoService productoService;
 	@GetMapping(value = "/listar")
@@ -36,7 +36,7 @@ public class ProductoController {
 	public Producto detalle(@PathVariable("id") Long id) {
 		Producto producto =  productoService.findById(id);
 		//producto.setPort(Integer.valueOf(env.getProperty("local.server.port")));
-		producto.setPort(port);
+		//producto.setPort(port);
 		/*boolean ok = false;
 		if(ok == false)
 			throw new Exception("No se pudo cargar el producto");*/
